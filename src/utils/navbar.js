@@ -45,8 +45,8 @@ export const navbar = [
   {
     id: 4,
     element: <Signin />,
-    title: "Sign In",
-    path: "/signin",
+    title: "Kirish",
+    path: "/login",
     private: false,
     hidden: true,
   },
