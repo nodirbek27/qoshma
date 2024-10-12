@@ -1,5 +1,6 @@
 import React from "react";
-// import Carousel from "../Carousel";
+import Carousel from "../Carousel";
+import Navbar from "../Navbar";
 // import Recommended from "../Recommended";
 // import Category from "../Category";
 // import Why from "../Why";
@@ -9,8 +10,8 @@ import React from "react";
 export const Home = () => {
   return (
     <div>
-      Home
-      {/* <Carousel /> */}
+      <Navbar />
+      <Carousel />
       {/* <Recommended /> */}
       {/* <Why /> */}
       {/* <Category /> */}
