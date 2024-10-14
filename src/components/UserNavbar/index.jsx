@@ -4,11 +4,12 @@ import { Link, useNavigate } from "react-router-dom";
 import { navbar } from "../../utils/navbar";
 import { Outlet } from "react-router-dom";
 
+const bgColor = "bg-gray-800";
+
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 769);
   const [isOpen, setIsOpen] = useState(false);
   const [isActive, setIsActive] = useState(null);
-  const [hasScrolled, setHasScrolled] = useState(false);
 
   const navigate = useNavigate();
 
@@ -16,21 +17,9 @@ const Navbar = () => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 769);
     };
-
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setHasScrolled(true);
-      } else {
-        setHasScrolled(false);
-      }
-    };
-
     window.addEventListener("resize", handleResize);
-    window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("resize", handleResize);
-      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -49,16 +38,12 @@ const Navbar = () => {
   return (
     <>
       {!isMobile ? (
-        <nav
-          className={`h-[64px] w-full absolute top-0 left-0 z-30 ${
-            hasScrolled ? "bg-gray-800 sticky" : ""
-          } transition-colors duration-300`}
-        >
+        <nav className={`h-[64px] sticky top-0 left-0 z-30 ${bgColor}`}>
           <div className="flex justify-between max-w-7xl mx-auto items-center p-4">
             <div className="text-white font-bold text-xl cursor-pointer">
-              <Link to="/">Logo</Link>
+              <Link to="/home">Logo</Link>
             </div>
-            <ul className="flex gap-8 md:gap-16 items-center justify-center text-center">
+            <ul className="flex gap-4 lg:gap-8 xl:gap-16 items-center justify-center text-center">
               {navbar.map((item) =>
                 !item.hidden ? (
                   <li
@@ -79,11 +64,7 @@ const Navbar = () => {
           </div>
         </nav>
       ) : (
-        <nav
-          className={`h-[64px] w-full absolute top-0 p-4 z-30 ${
-            hasScrolled ? "bg-gray-800 sticky" : ""
-          } transition-colors duration-300`}
-        >
+        <nav className={`h-[64px] sticky top-0 p-4 z-30 ${bgColor}`}>
           <div className="mx-auto flex justify-between items-center">
             <div className="text-white font-bold text-xl">Logo</div>
             <div className="relative flex justify-end items-center gap-6 text-white cursor-pointer">

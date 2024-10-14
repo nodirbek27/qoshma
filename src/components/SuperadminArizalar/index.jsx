@@ -319,7 +319,7 @@ const students = [
   },
 ];
 
-const Talabalar = () => {
+const Arizalar = () => {
   const [studentList] = useState(students);
   const [rowsLimit] = useState(10);
   const [rowsToShow, setRowsToShow] = useState(studentList.slice(0, rowsLimit));
@@ -360,7 +360,7 @@ const Talabalar = () => {
   return (
     <div>
       <div>
-        <h1 className="text-2xl font-medium">Ro'yxatdan o'tgan talabalar</h1>
+        <h1 className="text-2xl font-medium">Yuborilgan arizalar</h1>
       </div>
       <div className="bg-white flex  items-center pt-10 pb-14">
         <div className="w-full max-w-7xl sm:px-1 md:px-2">
@@ -531,4 +531,4 @@ const Talabalar = () => {
   );
 };
 
-export default Talabalar;
+export default Arizalar;

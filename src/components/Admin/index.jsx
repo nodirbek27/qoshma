@@ -4,7 +4,6 @@ import controlImg from "../../assets/control.png";
 import logo from "../../assets/logo.png";
 import analitikaImg from "../../assets/Chart.png";
 import talabaImg from "../../assets/graduate.png";
-import shartnomaImg from "../../assets/contract.png";
 import Exit from "../../assets/icons/exit.svg"
 
 const AdminDashboard = () => {
@@ -13,12 +12,7 @@ const AdminDashboard = () => {
 
   const Menus = [
     { title: "Analitika", src: analitikaImg, link: "/admin/analitika" },
-    { title: "Talabalar", src: talabaImg, link: "/admin/talabalar" },
-    {
-      title: "Shartnoma olganlar",
-      src: shartnomaImg,
-      link: "/admin/shartnoma-olganlar",
-    },
+    { title: "Arizalar", src: talabaImg, link: "/admin/arizalar" },
   ];
 
   return (

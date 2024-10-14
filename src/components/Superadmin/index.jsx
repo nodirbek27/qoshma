@@ -5,7 +5,6 @@ import logo from "../../assets/logo.png";
 import analitikaImg from "../../assets/Chart.png";
 import adminImg from "../../assets/adminImg.webp";
 import talabaImg from "../../assets/graduate.png";
-import shartnomaImg from "../../assets/contract.png";
 import Exit from "../../assets/icons/exit.svg";
 
 const SuperadminDashboard = () => {
@@ -15,12 +14,7 @@ const SuperadminDashboard = () => {
   const Menus = [
     { title: "Analitika", src: analitikaImg, link: "/superadmin/analitika" },
     { title: "Adminlar", src: adminImg, link: "/superadmin/adminlar" },
-    { title: "Talabalar", src: talabaImg, link: "/superadmin/talabalar" },
-    {
-      title: "Shartnoma olganlar",
-      src: shartnomaImg,
-      link: "/superadmin/shartnoma-olganlar",
-    },
+    { title: "Arizalar", src: talabaImg, link: "/superadmin/arizalar" },
   ];
 
   return (

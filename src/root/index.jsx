@@ -17,14 +17,12 @@ import GalleryPage from "../pages/UserDashboard/GalleryPage";
 import SuperadminDashboard from "../pages/SuperadminDashboard";
 import Analitika from "../pages/SuperadminDashboard/Analitika";
 import Adminlar from "../pages/SuperadminDashboard/Adminlar";
-import Talabalar from "../pages/SuperadminDashboard/Talabalar";
-import ShartnomaOlganlar from "../pages/SuperadminDashboard/ShartnomaOlganlar";
+import Arizalar from "../pages/SuperadminDashboard/Arizalar";
 
 // Admin
 import AdminDashboard from "../pages/AdminDashboard";
 import AdminAnalitika from "../pages/AdminDashboard/Analitika";
-import AdminTalabalar from "../pages/AdminDashboard/Talabalar";
-import AdminShartnomaOlganlar from "../pages/AdminDashboard/ShartnomaOlganlar";
+import AdminArizalar from "../pages/AdminDashboard/Arizalar";
 
 // Profile
 import ProfileDashboard from "../pages/ProfileDashboard";
@@ -36,9 +34,9 @@ import NotFoundPage from "../pages/NotFoundPage";
 
 const Root = () => {
   const isAuthenticated = true;
-  const role = "superadmin";
+  // const role = "superadmin";
   // const role = "admin";
-  // const role = "student";
+  const role = "student";
   // const role = "";
 
   return (
@@ -66,8 +64,7 @@ const Root = () => {
         >
           <Route path="analitika" element={<Analitika />} />
           <Route path="adminlar" element={<Adminlar />} />
-          <Route path="talabalar" element={<Talabalar />} />
-          <Route path="shartnoma-olganlar" element={<ShartnomaOlganlar />} />
+          <Route path="arizalar" element={<Arizalar />} />
           <Route path="" element={<Navigate to="/superadmin/analitika" />} />
         </Route>
 
@@ -83,11 +80,7 @@ const Root = () => {
           }
         >
           <Route path="analitika" element={<AdminAnalitika />} />
-          <Route path="talabalar" element={<AdminTalabalar />} />
-          <Route
-            path="shartnoma-olganlar"
-            element={<AdminShartnomaOlganlar />}
-          />
+          <Route path="arizalar" element={<AdminArizalar />} />
           <Route path="" element={<Navigate to="/admin/analitika" />} />
         </Route>
 

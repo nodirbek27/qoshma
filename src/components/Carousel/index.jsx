@@ -84,7 +84,6 @@ const Carousel = () => {
               onClick={() => handleThumbnailClick(index)}
             >
               <img src={item} alt={`thumbnail  ${index + 1}`} />
-              <div className="content">Name Slider</div>
             </div>
           ))}
         </div>
