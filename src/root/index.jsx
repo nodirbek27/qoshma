@@ -48,6 +48,7 @@ const Root = () => {
           <Route path="/news" element={<NewsPage />} />
           <Route path="/qabul" element={<QabulPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/home#contact" element={<Navigate to="/home#contact" />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/" element={<Navigate to="/home" />} />
         </Route>

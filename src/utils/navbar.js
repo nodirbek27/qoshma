@@ -65,7 +65,7 @@ export const navbar = [
       </React.Suspense>
     ),
     title: "Bog'lanish",
-    path: "/contact",
+    path: "/home#contact",
     private: false,
     hidden: false,
   },

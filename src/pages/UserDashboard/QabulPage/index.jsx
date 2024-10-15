@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Qabul from "../../../components/Qabul";
 
 const QabulPage = () => {
   return (
-    <div>QabulPage</div>
+    <div>
+      <Qabul />
+    </div>
   )
 }
 

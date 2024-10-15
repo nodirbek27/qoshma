@@ -1,17 +1,15 @@
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 import "./style.css";
-import rasm1 from "../../assets/images/img1.avif";
-import rasm2 from "../../assets/images/img2.avif";
-import rasm3 from "../../assets/images/img3.avif";
-import rasm4 from "../../assets/images/img4.avif";
-import rasm5 from "../../assets/images/img5.avif";
-import rasm6 from "../../assets/images/img6.avif";
+import rasm1 from "../../assets/images/img1.jpg";
+import rasm2 from "../../assets/images/img2.JPG";
+import rasm3 from "../../assets/images/img3.jpg";
+import rasm4 from "../../assets/images/img4.JPG";
 
 const Carousel = () => {
   const [itemActive, setItemActive] = useState(0);
   const intervalRef = useRef(null);
-  const items = [rasm1, rasm2, rasm3, rasm4, rasm5, rasm6];
+  const items = [rasm1, rasm2, rasm3, rasm4];
   const countItem = items.length;
 
   const nextSlide = useCallback(() => {
