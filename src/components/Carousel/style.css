@@ -73,11 +73,15 @@
 }
 .arrows {
   position: absolute;
+  display: flex;
   top: 30%;
   right: 50px;
   z-index: 8;
 }
 .arrows button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #eee5;
   border: none;
   font-family: monospace;
@@ -87,6 +91,9 @@
   font-size: x-large;
   color: #eee;
   transition: 0.5s;
+}
+.arrows button:nth-child(1) {
+  margin-right: 10px;
 }
 .arrows button:hover {
   background-color: #eee;

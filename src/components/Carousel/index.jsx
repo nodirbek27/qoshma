@@ -2,9 +2,9 @@ import React, { useState, useRef, useEffect, useCallback } from "react";
 import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 import "./style.css";
 import rasm1 from "../../assets/images/img1.jpg";
-import rasm2 from "../../assets/images/img2.JPG";
+import rasm2 from "../../assets/images/img2.jpg";
 import rasm3 from "../../assets/images/img3.jpg";
-import rasm4 from "../../assets/images/img4.JPG";
+import rasm4 from "../../assets/images/img4.jpg";
 
 const Carousel = () => {
   const [itemActive, setItemActive] = useState(0);

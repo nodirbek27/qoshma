@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
-import controlImg from "../../assets/control.png";
-import logo from "../../assets/logo.png";
-import analitikaImg from "../../assets/Chart.png";
-import talabaImg from "../../assets/graduate.png";
+import controlImg from "../../assets/images/control.png";
+import logo from "../../assets/images/logo.png";
+import analitikaImg from "../../assets/images/Chart.png";
+import talabaImg from "../../assets/images/graduate.png";
 import Exit from "../../assets/icons/exit.svg"
 
 const AdminDashboard = () => {
