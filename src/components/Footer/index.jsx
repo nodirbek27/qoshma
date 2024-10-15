@@ -101,7 +101,7 @@ const Footer = () => {
         <span className="mr-2">© 2024 Copyright: </span>
         <a
           className="font-semibold"
-          href="https://.../"
+          href="https://kspi.uz/authors"
         >
           QDPI IT Park
         </a>

@@ -101,7 +101,7 @@ const Navbar = () => {
           </div>
         </nav>
       )}
-      <div className="flex-grow">
+      <div className="flex-grow bg-[#fff]">
         <Outlet />
       </div>
       <div className={`${bgColor}`}>
