@@ -73,7 +73,7 @@ export const navbar = [
     id: 6,
     element: <Signin />,
     title: "Kirish",
-    path: "/login",
+    path: "/register",
     private: false,
     hidden: true,
   },

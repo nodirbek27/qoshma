@@ -28,9 +28,9 @@ import AdminArizalar from "../pages/AdminDashboard/Arizalar";
 import ProfileDashboard from "../pages/ProfileDashboard";
 import ArizaPage from "../pages/ProfileDashboard/ArizaPage";
 
-// Login and NotFoundPage
-import LoginPage from "../pages/UserDashboard/LoginPage";
+// Register and NotFoundPage
 import NotFoundPage from "../pages/NotFoundPage";
+import RegisterPage from "../pages/UserDashboard/RegisterPage";
 
 const Root = () => {
   const isAuthenticated = true;
@@ -48,6 +48,7 @@ const Root = () => {
           <Route path="/news" element={<NewsPage />} />
           <Route path="/qabul" element={<QabulPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/register" element={<RegisterPage />} />
           <Route path="/" element={<Navigate to="/home" />} />
         </Route>
 
@@ -58,7 +59,7 @@ const Root = () => {
             isAuthenticated && role === "superadmin" ? (
               <SuperadminDashboard />
             ) : (
-              <Navigate to="/login" />
+              <Navigate to="/register" />
             )
           }
         >
@@ -75,7 +76,7 @@ const Root = () => {
             isAuthenticated && role === "admin" ? (
               <AdminDashboard />
             ) : (
-              <Navigate to="/login" />
+              <Navigate to="/register" />
             )
           }
         >
@@ -91,15 +92,15 @@ const Root = () => {
             isAuthenticated && role === "student" ? (
               <ProfileDashboard />
             ) : (
-              <Navigate to="/login" />
+              <Navigate to="/register" />
             )
           }
         >
           <Route path="profile" element={<ArizaPage />} />
         </Route>
 
-        {/* LOGIN and * */}
-        <Route path="/login" element={<LoginPage />} />
+        {/* REGISTER and * */}
+        <Route path="/register" element={<RegisterPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Router>

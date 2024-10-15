@@ -3,6 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { navbar } from "../../utils/navbar";
 import { Outlet } from "react-router-dom";
+import Footer from "../Footer";
 
 const bgColor = "bg-gray-800";
 
@@ -24,7 +25,7 @@ const Navbar = () => {
   }, []);
 
   const onLogin = () => {
-    navigate("/login");
+    navigate("/register");
   };
 
   const onClickBar = () => {
@@ -36,7 +37,7 @@ const Navbar = () => {
   };
 
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       {!isMobile ? (
         <nav className={`h-[64px] sticky top-0 left-0 z-30 ${bgColor}`}>
           <div className="flex justify-between max-w-7xl mx-auto items-center p-4">
@@ -66,7 +67,9 @@ const Navbar = () => {
       ) : (
         <nav className={`h-[64px] sticky top-0 p-4 z-30 ${bgColor}`}>
           <div className="mx-auto flex justify-between items-center">
-            <div className="text-white font-bold text-xl">Logo</div>
+            <div className="text-white font-bold text-xl cursor-pointer">
+              <Link to="/home">Logo</Link>
+            </div>
             <div className="relative flex justify-end items-center gap-6 text-white cursor-pointer">
               {isOpen ? (
                 <FaTimes
@@ -98,10 +101,13 @@ const Navbar = () => {
           </div>
         </nav>
       )}
-      <div>
+      <div className="flex-grow">
         <Outlet />
       </div>
-    </>
+      <div className={`${bgColor}`}>
+        <Footer />
+      </div>
+    </div>
   );
 };
 
