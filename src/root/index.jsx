@@ -26,7 +26,8 @@ import AdminArizalar from "../pages/AdminDashboard/Arizalar";
 
 // Profile
 import ProfileDashboard from "../pages/ProfileDashboard";
-import ArizaPage from "../pages/ProfileDashboard/ArizaPage";
+import ProfileArizaPage from "../pages/ProfileDashboard/ProfileArizaPage";
+import ProfileInfoPage from "../pages/ProfileDashboard/ProfileInfoPage";
 
 // Register and NotFoundPage
 import NotFoundPage from "../pages/NotFoundPage";
@@ -34,9 +35,9 @@ import RegisterPage from "../pages/UserDashboard/RegisterPage";
 
 const Root = () => {
   const isAuthenticated = true;
-  const role = "superadmin";
+  // const role = "superadmin";
   // const role = "admin";
-  // const role = "student";
+  const role = "student";
   // const role = "";
 
   return (
@@ -97,7 +98,8 @@ const Root = () => {
             )
           }
         >
-          <Route path="profile" element={<ArizaPage />} />
+          <Route path="profile" element={<ProfileInfoPage />} />
+          <Route path="ariza" element={<ProfileArizaPage />} />
         </Route>
 
         {/* REGISTER and * */}
