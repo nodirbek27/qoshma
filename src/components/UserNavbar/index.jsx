@@ -59,7 +59,7 @@ const Navbar = () => {
                 ) : null
               )}
             </ul>
-            <button className="px-5 py-1 text-white border-2" onClick={onLogin}>
+            <button className="px-5 py-1 text-white border-2 hover:border-slate-200 hover:text-gray-800 hover:bg-white transition-colors duration-300" onClick={onLogin}>
               Kirish
             </button>
           </div>

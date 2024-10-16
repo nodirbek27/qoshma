@@ -60,7 +60,7 @@ const SignUp = () => {
         </label>
         {/* Button */}
         <div>
-          <button className="w-full border-2 p-2">RO'YXATDAN O'TISH</button>
+          <button className="p-2 border-2 border-gray-800 w-full rounded text-gray-800 hover:bg-gray-800 hover:text-white hover:border-slate-400 transition-colors duration-300">RO'YXATDAN O'TISH</button>
         </div>
       </form>
     </div>

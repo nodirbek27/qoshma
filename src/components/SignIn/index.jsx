@@ -51,7 +51,7 @@ const SignIn = () => {
           </a>
         </div>
         <div>
-          <button className="w-full border-2 p-2">KIRISH</button>
+          <button className="p-2 border-2 border-gray-800 w-full rounded text-gray-800 hover:bg-gray-800 hover:text-white hover:border-slate-400 transition-colors duration-300">KIRISH</button>
         </div>
       </form>
     </div>
