@@ -37,7 +37,7 @@ const Root = () => {
   const isAuthenticated = true;
   // const role = "superadmin";
   // const role = "admin";
-  const role = "student";
+  const role = "profile";
   // const role = "";
 
   return (
@@ -89,17 +89,17 @@ const Root = () => {
 
         {/* PROFILE */}
         <Route
-          path="/student"
+          path="/profile"
           element={
-            isAuthenticated && role === "student" ? (
+            isAuthenticated && role === "profile" ? (
               <ProfileDashboard />
             ) : (
               <Navigate to="/register" />
             )
           }
         >
-          <Route path="profile" element={<ProfileInfoPage />} />
-          <Route path="ariza" element={<ProfileArizaPage />} />
+          <Route path="info" element={<ProfileInfoPage />} />
+          <Route path="arizalar" element={<ProfileArizaPage />} />
         </Route>
 
         {/* REGISTER and * */}
