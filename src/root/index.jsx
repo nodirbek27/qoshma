@@ -28,6 +28,7 @@ import AdminArizalar from "../pages/AdminDashboard/Arizalar";
 import ProfileDashboard from "../pages/ProfileDashboard";
 import ProfileArizaPage from "../pages/ProfileDashboard/ProfileArizaPage";
 import ProfileInfoPage from "../pages/ProfileDashboard/ProfileInfoPage";
+import ProfileChatPage from "../pages/ProfileDashboard/ProfileChatPage";
 
 // Register and NotFoundPage
 import NotFoundPage from "../pages/NotFoundPage";
@@ -49,7 +50,10 @@ const Root = () => {
           <Route path="/news" element={<NewsPage />} />
           <Route path="/qabul" element={<QabulPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
-          <Route path="/home#contact" element={<Navigate to="/home#contact" />} />
+          <Route
+            path="/home#contact"
+            element={<Navigate to="/home#contact" />}
+          />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/" element={<Navigate to="/home" />} />
         </Route>
@@ -100,6 +104,7 @@ const Root = () => {
         >
           <Route path="info" element={<ProfileInfoPage />} />
           <Route path="arizalar" element={<ProfileArizaPage />} />
+          <Route path="chat" element={<ProfileChatPage />} />
         </Route>
 
         {/* REGISTER and * */}

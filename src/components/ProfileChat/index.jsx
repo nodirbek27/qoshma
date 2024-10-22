@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProfileAriza = () => {
+const ProfileChatPage = () => {
   return (
     <div>
       <div className="breadcrumbs text-sm mb-3">
@@ -8,11 +8,11 @@ const ProfileAriza = () => {
           <li>
             <a href="/profile">Home</a>
           </li>
-          <li>Qabul hujjatlari</li>
+          <li>Xabarlar</li>
         </ul>
       </div>
     </div>
   );
 };
 
-export default ProfileAriza;
+export default ProfileChatPage;
