@@ -146,7 +146,7 @@ const ProfileNavbar = () => {
             </div>
           </div>
         </div>
-        <div className="h-screen flex-1 p-2 md:p-4 overflow-y-scroll bg-slate-100">
+        <div className="h-[calc(100vh-64px)] flex-1 p-2 md:p-4 overflow-y-scroll bg-slate-100">
           <Outlet />
         </div>
       </div>

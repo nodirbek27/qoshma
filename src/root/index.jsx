@@ -36,9 +36,9 @@ import RegisterPage from "../pages/UserDashboard/RegisterPage";
 
 const Root = () => {
   const isAuthenticated = true;
-  // const role = "superadmin";
+  const role = "superadmin";
   // const role = "admin";
-  const role = "profile";
+  // const role = "profile";
   // const role = "";
 
   return (

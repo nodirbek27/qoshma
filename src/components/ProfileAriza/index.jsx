@@ -3,6 +3,7 @@ import React from "react";
 const ProfileAriza = () => {
   return (
     <div>
+      {/* Breadcrumb */}
       <div className="breadcrumbs text-sm mb-3">
         <ul>
           <li>
@@ -11,6 +12,7 @@ const ProfileAriza = () => {
           <li>Qabul hujjatlari</li>
         </ul>
       </div>
+      {/* Ariza */}
     </div>
   );
 };
